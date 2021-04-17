@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnisurf | Surf Shop</title>
+</head>
+
+<body>
+
+<!------- Header ------->
+
+
+<div class="header">
+    <div class="topbar">Use Code "OMNI" for 10% discount!</div>
+     <div class="navbar">
+         <a href="/"><img src="omnisurf-images/cover.png" width="200px"></a>
+         <nav>
+         <ul id="nav-list">
+             <li><a href="/">Home</a></li>
+             <li><a href="/shop.html">Shop</a></li>
+             <li><a href="/account.html">Account</a></li>
+             <li><a href="/about.html">About</a></li>
+             <li><a href="/contact.html">Contact</a></li>
+         </ul>
+     </nav>
+     <div style="margin:0" class="nav-right">
+     <a href="/cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+     <img src="omnisurf-images/menu.png" class="menu-icon" onclick="menutoggle()">
+     </div>
+     </div>
+ </div>
+<div class="surf-header-img"> 
+    <img src="omnisurf-images/surf-header.jpg" width="auto" height="auto" style="max-width: 100%; min-width: 800px; min-height: 500px; margin-left; auto; margin-right: auto;">
+    <div class="form-container-container">
+    <div class="form-container">
+        <span onclick="loginform()" style="cursor:pointer">Login</span>
+        <span onclick="regform()" style="cursor:pointer">Register</span>
+        <hr id="indicator">
+        <div id="login-form">
+            <input type="text" placeholder="Username" class="account-input">
+            <input type="password" placeholder="Password" class="account-input">
+            <a href="" class="btn">Login</a><br>
+            <p style="margin-top: 20px">Forgot Password</p>
+        </div>
+        <div id="reg-form">
+            <input type="text" placeholder="Username" class="account-input">
+            <input type="text" placeholder="email@example.com" class="account-input">
+            <input type="password" placeholder="Password" class="account-input">
+            <a href="" class="btn">Register</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!--------- Footer ---------->
+
+<div class="footer">
+    <div class="small-container">
+    <div class="row">
+        <div class="footer-menu">
+            <h4 class="footer-header">Menu</h4>
+            <ul>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>About</li>
+                <li>Account</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="footer-about">
+            <h4 class="newsletter-title">Newsletter</h4>
+            <p>Sign up for our newsletter to receive information on updates, sales, and new product arrivals!</p>
+            <input type="email" placeholder="email@example.com">
+            <a href="">Join</a>
+        </div>
+        <div class="footer-contact">
+            <h4 class="footer-header">Contact</h4>
+            <p><b>PHONE</b>: 831-888-888</p>
+            <p><b>EMAIL</b>: surfing@omnisurf.org</p>
+            <p><b>Social Media:</b></p>
+            <ul>
+                <a href=""><li><span><i class="fa fa-instagram" aria-hidden="true"></i></span> <i>@Omnisurf</i></li></a>
+                <a href=""><li><span><i class="fa fa-twitter-square" aria-hidden="true"></i></span><i>  @Omnisurf</i></li></a>
+                <a href=""><li><span><i class="fa fa-facebook" aria-hidden="true"></i></span><i> &nbsp@Omnisurf</i></li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p style="margin-top: 15px; margin-bottom: 15px;"><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2021 - Omnisurf Project</p>
+</div>
+
+
+<script>
+    var loginForm = document.getElementById('login-form');
+    var regForm = document.getElementById('reg-form');
+    var indicator = document.getElementById('indicator');
+
+   function loginform() {
+        loginForm.style.transform = "translateX(0)";
+        regForm.style.transform = "translateX(400px)";
+        indicator.style.transform = "translateX(-65px)"
+   }
+   
+   function regform() {
+        loginForm.style.transform = "translateX(-400px)";
+        regForm.style.transform = "translateX(0)";
+        indicator.style.transform = "translateX(65px)"
+    }
+    
+</script>
+
+<script type="text/javascript" src="/app.js"></script>
+</body>
+
+</html>
